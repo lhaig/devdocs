@@ -9,10 +9,10 @@ module Docs
           # Module
           if node.name == 'h2'
             # type = node.content.remove 'Chance.'
-            if type.capitalize! # sync, history
-              entries << [node.content, node['id'], type]
-            end
-            next
+            # if type.capitalize! # sync, history
+            #   entries << [node.content, node['id'], type]
+            # end
+            # next
           end
 
           entries << [name, node['id'], type]
